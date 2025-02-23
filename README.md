@@ -73,7 +73,7 @@ It is recommended to use a virtual environment (`venv`) to manage dependencies:
 After activating the virtual environment, install the required dependencies:
 
 ```bash
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
