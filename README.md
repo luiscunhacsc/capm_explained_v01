@@ -1,119 +1,169 @@
-```markdown
 # Capital Asset Pricing Model (CAPM) Explained
 
-## 1. What Is This?
+## Overview
 
-The **Capital Asset Pricing Model (CAPM)** is a foundational financial model used to estimate the expected return of an asset based on its systematic risk ($\beta$). The model helps investors understand the relationship between risk and return, making it a cornerstone of modern portfolio theory.
+The **Capital Asset Pricing Model (CAPM)** is a foundational financial model that estimates the expected return of an asset based on its systematic risk (β). This interactive application empowers users to explore the intricate relationship between risk and return by allowing them to adjust key parameters, visualize outcomes, and dive into both the theory and practical applications behind CAPM.
 
-This project includes an interactive application where you can:
-- Input key parameters such as the risk-free rate, market return, and beta.
-- Visualize how changes in these parameters affect the expected return.
-- Explore pedagogical sections explaining the theory behind CAPM, practical applications, and hands-on labs.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Cloning the Repository](#cloning-the-repository)
+  - [Creating a Virtual Environment](#creating-a-virtual-environment)
+  - [Installing Dependencies](#installing-dependencies)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [Editing the Code](#editing-the-code)
+- [Additional Resources](#additional-resources)
+- [Support](#support)
+- [License](#license)
 
-## 2. Setting Up a Local Development Environment
+## Overview
 
-To modify and run the code locally, follow these steps:
+The CAPM is a core component of modern portfolio theory. It allows investors to understand and quantify the trade-off between risk and return by using beta (β) as a measure of an asset's sensitivity to market movements. This project includes:
 
-### 2.1 Prerequisites
+- An interactive dashboard to input parameters such as the risk-free rate, market return, and beta.
+- Dynamic visualizations that demonstrate how these parameters influence expected returns.
+- Educational content that explains the underlying theory, assumptions, and real-world applications of CAPM.
 
-1. **A computer** (Windows, macOS, or Linux).
-2. **Python 3.9 or higher** (Python 3.12 preferred, but anything 3.9+ should be fine).
-   - If you do not have Python installed:
-     - Go to [python.org/downloads](https://www.python.org/downloads/) and install the latest version for your system.
-3. **Visual Studio Code (VS Code)**
-   - Download from [code.visualstudio.com](https://code.visualstudio.com/)
-4. **Git** (optional, but recommended for cloning the repository).
-   - Install from [git-scm.com/downloads](https://git-scm.com/downloads)
+## Features
 
-### 2.2 Downloading the Project
+- **Interactive Dashboard:** Real-time visualization of the Security Market Line (SML) and expected returns.
+- **Customizable Inputs:** Adjust key financial parameters and see instant feedback.
+- **Educational Modules:** Detailed explanations of CAPM, including its assumptions and limitations.
+- **Hands-On Labs:** Practical examples and case studies to solidify your understanding.
+- **User-Friendly Interface:** Designed for both beginners and seasoned finance professionals.
+
+## Installation
+
+### Prerequisites
+
+Before setting up the project locally, ensure you have:
+
+1. **A Computer:** Windows, macOS, or Linux.
+2. **Python 3.9 or Higher:** (Python 3.12 is preferred).  
+   Download from: [python.org/downloads](https://www.python.org/downloads/)
+3. **Visual Studio Code (VS Code):** For code editing.  
+   Download from: [code.visualstudio.com](https://code.visualstudio.com/)
+4. **Git:** (Optional, but recommended for cloning the repository).  
+   Download from: [git-scm.com/downloads](https://git-scm.com/downloads)
+
+### Cloning the Repository
 
 #### Option 1: Cloning via Git (Recommended)
 
-1. Open **Terminal** (macOS/Linux) or **Command Prompt** / **PowerShell** (Windows).
-2. Navigate to the folder where you want to download the project:
-   ```bash
+1. Open Terminal (macOS/Linux) or Command Prompt/PowerShell (Windows).
+2. Navigate to your desired directory:
+   ```
    cd Documents
    ```
-3. Run the following command:
-   ```bash
+3. Clone the repository:
+   ```
    git clone https://github.com/luiscunhacsc/capm_explained_v1.git
    ```
 4. Enter the project folder:
-   ```bash
+   ```
    cd capm_explained_v1
    ```
 
 #### Option 2: Download as ZIP
 
-- Visit [https://github.com/luiscunhacsc/capm_explained_v1](https://github.com/luiscunhacsc/capm_explained_v1)
-- Click **Code > Download ZIP**.
-- Extract the ZIP file into a local folder.
+1. Visit [https://github.com/luiscunhacsc/capm_explained_v1](https://github.com/luiscunhacsc/capm_explained_v1).
+2. Click on **Code > Download ZIP**.
+3. Extract the ZIP file to your preferred location.
 
-### 2.3 Creating a Virtual Environment
+### Creating a Virtual Environment
 
-It is recommended to use a virtual environment (venv) to manage dependencies:
+Using a virtual environment helps manage dependencies efficiently.
 
-- Open VS Code and navigate to the project folder.
-- Open the integrated terminal (Ctrl + ` in VS Code or Terminal > New Terminal).
-- Run the following commands to create and activate a virtual environment:
-  ```bash
-  python -m venv venv
-  ```
-  
-  **On Windows:**
-  ```bash
-  venv\Scripts\activate
-  ```
-  
-  **On macOS/Linux:**
-  ```bash
-  source venv/bin/activate
-  ```
+1. Open VS Code and navigate to the project folder.
+2. Open the integrated terminal (use **Ctrl + `** or select *Terminal > New Terminal*).
+3. Create a virtual environment by running:
+   ```
+   python -m venv venv
+   ```
+4. Activate the virtual environment:
+   - **On Windows:**
+     ```
+     venv\Scripts\activate
+     ```
+   - **On macOS/Linux:**
+     ```
+     source venv/bin/activate
+     ```
 
-### 2.4 Installing Dependencies
+### Installing Dependencies
 
-After activating the virtual environment, install the required dependencies:
-```bash
-python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
-```
+With the virtual environment activated, install the required packages:
+1. Upgrade pip:
+   ```
+   python.exe -m pip install --upgrade pip
+   ```
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+This command installs libraries such as:
+- **Streamlit** – For the interactive UI.
+- **NumPy** – For mathematical computations.
+- **Matplotlib** – For plotting visualizations.
 
-This installs libraries such as:
-- Streamlit (for the interactive UI)
-- NumPy (for mathematical calculations)
-- Matplotlib (for plotting results)
+## Usage
 
-## 3. Running the Application
+To launch the interactive CAPM application:
 
-To launch the application, execute:
-```bash
-streamlit run capm_explained.py
-```
+1. Ensure your virtual environment is active.
+2. Run the following command in the terminal:
+   ```
+   streamlit run capm_explained.py
+   ```
+3. A new browser tab should open automatically at [http://localhost:8501](http://localhost:8501). If not, open your browser and navigate to that URL manually.
 
-This should open a new tab in your web browser with the interactive tool. If it does not open automatically, check the terminal for a URL (e.g., http://localhost:8501) and open it manually.
+## Troubleshooting
 
-### 3.1 Troubleshooting
+- **ModuleNotFoundError:**  
+  Verify that the virtual environment is activated using `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (macOS/Linux).
 
-- **ModuleNotFoundError:** Ensure the virtual environment is activated (`venv\Scripts\activate` or `source venv/bin/activate`).
-- **Python not recognized:** Ensure Python is installed and added to your system's PATH.
-- **Browser does not open:** Manually enter the http://localhost:8501 URL in your browser.
+- **Python Not Recognized:**  
+  Ensure that Python is correctly installed and added to your system's PATH.
 
-## 4. Editing the Code
+- **Browser Does Not Open Automatically:**  
+  Manually navigate to [http://localhost:8501](http://localhost:8501) in your web browser.
 
-If you want to make modifications:
-- Open `capm_explained.py` in VS Code.
-- Modify the code as needed.
-- Restart the Streamlit app after changes (Ctrl + C to stop, then rerun `streamlit run capm_explained.py`).
+## Editing the Code
 
-## 5. Additional Resources
+To customize or improve the application:
 
-- **Streamlit Documentation:** [docs.streamlit.io](https://docs.streamlit.io)
-- **CAPM Overview:** [Investopedia Guide](https://www.investopedia.com/terms/c/capm.asp)
-- **Modern Portfolio Theory:** [Investopedia Guide](https://www.investopedia.com/terms/m/modernportfoliotheory.asp)
+1. Open `capm_explained.py` in VS Code.
+2. Modify the code as desired.
+3. After saving changes, restart the Streamlit app:
+   - Stop the current session (using **Ctrl + C** in the terminal).
+   - Relaunch with:
+     ```
+     streamlit run capm_explained.py
+     ```
 
-## 6. Support
+## Additional Resources
 
-For issues or suggestions, open an Issue on GitHub: [https://github.com/luiscunhacsc/capm_explained_v1/issues](https://github.com/luiscunhacsc/capm_explained_v1/issues)
+- **Streamlit Documentation:**  
+  [docs.streamlit.io](https://docs.streamlit.io)
+
+- **CAPM Overview:**  
+  [Investopedia CAPM Guide](https://www.investopedia.com/terms/c/capm.asp)
+
+- **Modern Portfolio Theory:**  
+  [Investopedia Modern Portfolio Theory](https://www.investopedia.com/terms/m/modernportfoliotheory.asp)
+
+## Support
+
+For issues, suggestions, or contributions, please open an issue on GitHub:  
+[https://github.com/luiscunhacsc/capm_explained_v1/issues](https://github.com/luiscunhacsc/capm_explained_v1/issues)
+
+## License
+
+This project is licensed under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/deed.en).
+
+---
 
 Happy exploring the Capital Asset Pricing Model (CAPM)!
-```
