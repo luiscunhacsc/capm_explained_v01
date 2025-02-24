@@ -52,12 +52,12 @@ st.title("📊 Understanding the Capital Asset Pricing Model (CAPM)")
 st.markdown("""
 Analyze how different parameters affect the expected return of an asset using the CAPM formula:
 $$
-E(R_i) = R_f + \beta_i (E(R_m) - R_f)
+E(R_i) = R_f + \\beta_i (E(R_m) - R_f)
 $$
 Where:
 - $E(R_i)$: Expected return of the asset.
 - $R_f$: Risk-free rate.
-- $\beta_i$: Beta of the asset.
+- $\\beta_i$: Beta of the asset.
 - $E(R_m)$: Expected market return.
 """)
 
@@ -244,7 +244,7 @@ with tab4:
         - Practice interpreting beta values.
         
         **Suggested Steps**:
-        1. Click "**Set Lab 1 Parameters**" to use $R_f = 2\%$, $E(R_m) = 8\%$, $\\beta = 1.5$.
+        1. Click "**Set Lab 1 Parameters**" to use $R_f = 2\\%$, $E(R_m) = 8\\%$, $\\beta = 1.5$.
         2. Compare expected returns for $\\beta = 0.5$ and $\\beta = 2.0$.
         3. Increase $E(R_m)$ to 12%. Observe how returns change.
         4. Decrease $E(R_m)$ to 4%. Repeat the analysis.
@@ -266,7 +266,7 @@ with tab4:
         - Understand why higher-risk environments favor aggressive stocks.
         
         **Suggested Steps**:
-        1. Click "**Set Lab 2 Parameters**" to use $R_f = 3\%$, $E(R_m) = 12\%$, $\\beta = 2.0$.
+        1. Click "**Set Lab 2 Parameters**" to use $R_f = 3\\%$, $E(R_m) = 12\\%$, $\\beta = 2.0$.
         2. Compare expected returns for $\\beta = 1.0$ and $\\beta = 1.5$.
         3. Increase $E(R_m)$ to 15%. Observe the impact.
         4. Decrease $E(R_m)$ to 5%. Repeat the analysis.
@@ -288,7 +288,7 @@ with tab4:
         - Practice calculating portfolio beta.
         
         **Suggested Steps**:
-        1. Click "**Set Lab 3 Parameters**" to use $R_f = 1\%$, $E(R_m) = 5\%$, $\\beta = 0.5$.
+        1. Click "**Set Lab 3 Parameters**" to use $R_f = 1\\%$, $E(R_m) = 5\\%$, $\\beta = 0.5$.
         2. Allocate 60% to the defensive asset and 40% to the aggressive asset.
         3. Calculate the portfolio beta:  
            $$
@@ -313,7 +313,7 @@ with tab4:
         - Analyze the trade-off between risk and return.
         
         **Suggested Steps**:
-        1. Click "**Set Lab 4 Parameters**" to use $R_f = 4\%$, $E(R_m) = 10\%$, $\\beta = 0.8$.
+        1. Click "**Set Lab 4 Parameters**" to use $R_f = 4\\%$, $E(R_m) = 10\\%$, $\\beta = 0.8$.
         2. Compare expected returns for $\\beta = 0.5$ and $\\beta = 1.5$.
         3. Simulate a market downturn by reducing $E(R_m)$ to 2%. Observe the impact.
         """)
@@ -334,7 +334,7 @@ with tab4:
         - Understand the importance of diversification.
         
         **Suggested Steps**:
-        1. Click "**Set Lab 5 Parameters**" to use $R_f = 2\%$, $E(R_m) = 6\%$, $\\beta = 1.2$.
+        1. Click "**Set Lab 5 Parameters**" to use $R_f = 2\\%$, $E(R_m) = 6\\%$, $\\beta = 1.2$.
         2. Increase $E(R_m)$ to 15%. Observe the impact on expected returns.
         3. Decrease $E(R_m)$ to 1%. Repeat the analysis.
         """)
@@ -391,9 +391,9 @@ with tab5:
     - **$\\beta_i$**: How sensitive your asset is to market movements.
 
     Example:
-    - If $R_f = 2\%$, $E(R_m) = 8\%$, and $\\beta = 1.5$:
+    - If $R_f = 2\\%$, $E(R_m) = 8\\%$, and $\\beta = 1.5$:
       $$
-      E(R_i) = 2\% + 1.5 (8\% - 2\%) = 11\%
+      E(R_i) = 2\\% + 1.5 (8\\% - 2\\%) = 11\\%
       $$
 
     ---

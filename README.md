@@ -36,86 +36,84 @@ To modify and run the code locally, follow these steps:
    ```
 3. Run the following command:
    ```bash
-   git clone https://github.com/luiscunhacsc/capm_explained_v01.git
+   git clone https://github.com/luiscunhacsc/capm_explained_v1.git
    ```
 4. Enter the project folder:
    ```bash
-   cd capm_explained_v01
+   cd capm_explained_v1
    ```
 
 #### Option 2: Download as ZIP
 
-1. Visit [https://github.com/luiscunhacsc/capm_explained_v01](https://github.com/luiscunhacsc/capm_explained_v01)
-2. Click **Code > Download ZIP**.
-3. Extract the ZIP file into a local folder.
+- Visit [https://github.com/luiscunhacsc/capm_explained_v1](https://github.com/luiscunhacsc/capm_explained_v1)
+- Click **Code > Download ZIP**.
+- Extract the ZIP file into a local folder.
 
 ### 2.3 Creating a Virtual Environment
 
-It is recommended to use a virtual environment (`venv`) to manage dependencies:
+It is recommended to use a virtual environment (venv) to manage dependencies:
 
-1. Open **VS Code** and navigate to the project folder.
-2. Open the integrated terminal (`Ctrl + ~` in VS Code or `Terminal > New Terminal`).
-3. Run the following commands to create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
-   - On Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
+- Open VS Code and navigate to the project folder.
+- Open the integrated terminal (Ctrl + ` in VS Code or Terminal > New Terminal).
+- Run the following commands to create and activate a virtual environment:
+  ```bash
+  python -m venv venv
+  ```
+  
+  **On Windows:**
+  ```bash
+  venv\Scripts\activate
+  ```
+  
+  **On macOS/Linux:**
+  ```bash
+  source venv/bin/activate
+  ```
 
 ### 2.4 Installing Dependencies
 
 After activating the virtual environment, install the required dependencies:
-
 ```bash
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 This installs libraries such as:
-- **Streamlit** (for the interactive UI)
-- **NumPy** (for mathematical calculations)
-- **Matplotlib** (for plotting results)
+- Streamlit (for the interactive UI)
+- NumPy (for mathematical calculations)
+- Matplotlib (for plotting results)
 
 ## 3. Running the Application
 
 To launch the application, execute:
-
 ```bash
 streamlit run capm_explained.py
 ```
 
-This should open a new tab in your web browser with the interactive tool. If it does not open automatically, check the terminal for a URL (e.g., `http://localhost:8501`) and open it manually.
+This should open a new tab in your web browser with the interactive tool. If it does not open automatically, check the terminal for a URL (e.g., http://localhost:8501) and open it manually.
 
 ### 3.1 Troubleshooting
 
 - **ModuleNotFoundError:** Ensure the virtual environment is activated (`venv\Scripts\activate` or `source venv/bin/activate`).
 - **Python not recognized:** Ensure Python is installed and added to your system's PATH.
-- **Browser does not open:** Manually enter the `http://localhost:8501` URL in your browser.
+- **Browser does not open:** Manually enter the http://localhost:8501 URL in your browser.
 
 ## 4. Editing the Code
 
 If you want to make modifications:
-1. Open `capm_explained.py` in **VS Code**.
-2. Modify the code as needed.
-3. Restart the Streamlit app after changes (`Ctrl + C` to stop, then rerun `streamlit run capm_explained.py`).
+- Open `capm_explained.py` in VS Code.
+- Modify the code as needed.
+- Restart the Streamlit app after changes (Ctrl + C to stop, then rerun `streamlit run capm_explained.py`).
 
 ## 5. Additional Resources
 
-- **Streamlit Documentation**: [docs.streamlit.io](https://docs.streamlit.io)
-- **CAPM Overview**: [Investopedia Guide](https://www.investopedia.com/terms/c/capm.asp)
-- **Modern Portfolio Theory**: [Investopedia Guide](https://www.investopedia.com/terms/m/modernportfoliotheory.asp)
+- **Streamlit Documentation:** [docs.streamlit.io](https://docs.streamlit.io)
+- **CAPM Overview:** [Investopedia Guide](https://www.investopedia.com/terms/c/capm.asp)
+- **Modern Portfolio Theory:** [Investopedia Guide](https://www.investopedia.com/terms/m/modernportfoliotheory.asp)
 
 ## 6. Support
 
-For issues or suggestions, open an **Issue** on GitHub:
-[https://github.com/luiscunhacsc/capm_explained_v01/issues](https://github.com/luiscunhacsc/capm_explained_v01/issues)
+For issues or suggestions, open an Issue on GitHub: [https://github.com/luiscunhacsc/capm_explained_v1/issues](https://github.com/luiscunhacsc/capm_explained_v1/issues)
 
----
-*Happy exploring the Capital Asset Pricing Model (CAPM)!*
+Happy exploring the Capital Asset Pricing Model (CAPM)!
 ```
